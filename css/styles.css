@@ -7,16 +7,17 @@ ul, ol {
 
 
 body {
-
 }
 
 .gallery {
-    background-color: pink;
     margin: 24px 156px;
     max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    /* cursor:
+            url("../icons.svg"),
+            pointer; */
 }
 
 
