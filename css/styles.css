@@ -9,55 +9,35 @@ ul, ol {
 body {
 }
 
+/* ul gallery */
 .gallery {
-    margin: 24px 156px;
-    max-width: 1440px;
+    padding: 24px 156px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
-    /* cursor:
-            url("../icons.svg"),
-            pointer; */
 }
-
 
 .gallery-item {
     width: calc((100% - 2 * 24px) / 3);
-    height: auto;
+    aspect-ratio: calc(360/200);
+    transition: transform 300ms;
 }
 
 .gallery-item:hover {
-    width: calc((100% - 2 * 24px) / 3);
-    height: 208px;
+    transform: scale(calc(376/360));
 }
 
 .gallery-image {
-    max-width: 100%;
-    height: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 /* Modal */
-.basicLightbox {
-    
-}
-
-.basicLightbox__placeholder {
-}
-
-.galleryBasicLightbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 28px 164px;
+.modal {
     background: #2E2F42CC;
-}
-
-.basicLightbox-img {
-    width: 100%;
-    object-fit: contain;
-    object-position: center top;
 }
 
 

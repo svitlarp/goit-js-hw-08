@@ -93,10 +93,8 @@ const onImageClick = event => {
   console.log(event.target.dataset.source);
 
   const galleryModalInstance = basicLightbox.create(`
-    <div class="galleryBasicLightbox">
-      <img class="basicLightbox-img" src=${event.target.dataset.source} alt=${event.target.alt}>
-    </div>
-    `);
+    <img class="basicLightbox-img" src=${event.target.dataset.source} alt=${event.target.alt}>
+    `, {className: "modal"});
   galleryModalInstance.show();
 }
 
